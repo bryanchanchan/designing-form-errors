@@ -6,9 +6,8 @@ html {
   color: #999;
 }
 
-
 .is-validated input:invalid,
-.is-validated input[type="checkbox"]:invalid + lable::before {
+.is-validated input[type="checkbox"]:invalid + label::before {
   border-color: #f33;
 }
 
