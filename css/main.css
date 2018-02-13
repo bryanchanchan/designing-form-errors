@@ -5,3 +5,26 @@ html {
 .flag-optional {
   color: #999;
 }
+
+
+.is-validated input:invalid,
+.is-validated input[type="checkbox"]:invalid + lable::before {
+  border-color: #f33;
+}
+
+.error-message {
+  display: none;
+  background-color: #fee;
+  color: #f33;
+}
+
+.error-message-highlighted {
+  background-color: #c33;
+  color: #fff;
+}
+
+.is-validated > .error-message:first-child,
+.is-validated input:valid + .error-message,
+.is-validated input:invalid + .error-message {
+  display: block;
+}
